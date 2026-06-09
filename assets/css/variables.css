@@ -11,3 +11,13 @@
   --gray-500: #64748B;
   --gray-900: #0F172A;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
