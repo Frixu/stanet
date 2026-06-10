@@ -3,6 +3,32 @@
   color: #0F172A;
 }
 
+@keyframes legalFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.legal-hero .legal-container {
+  animation: legalFadeUp 0.55s ease both;
+}
+
+.legal-card {
+  animation: legalFadeUp 0.55s ease 0.15s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .legal-hero .legal-container,
+  .legal-card {
+    animation: none;
+  }
+}
+
 .legal-hero {
   padding: 150px 0 56px;
   background: #0F172A;

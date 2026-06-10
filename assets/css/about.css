@@ -17,13 +17,15 @@
 .about-image {
   height: 500px;
   border-radius: 24px;
+  background: linear-gradient(135deg, #0A1628, #1a3a6b);
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
 
-  background:
-  linear-gradient(
-    135deg,
-    #0F172A,
-    #2563EB
-  );
+.about-infographic {
+  width: 100%;
+  height: 100%;
 }
 
 .about-subtitle {
@@ -61,9 +63,13 @@
 
   border-radius: 50%;
 
-  background: rgba(37,99,235,0.15);
+  background: rgba(37,99,235,0.1);
 
   flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-item h4 {

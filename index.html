@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/testimonials.css">
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/clients.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
@@ -90,7 +91,9 @@
 
             </div>
 
-            <div class="hero-visual" aria-hidden="true"></div>
+            <div class="hero-visual" aria-hidden="true">
+                <canvas id="network-canvas"></canvas>
+            </div>
 
         </div>
 
@@ -119,7 +122,15 @@
     <div class="services-grid">
 
       <div class="service-card">
-        <div class="service-icon"></div>
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10"/>
+            <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6"/>
+            <path d="M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+            <path d="M19 3l-6 6"/>
+            <path d="M22 2l-3 1 1-3z"/>
+          </svg>
+        </div>
         <h3 class="service-title">
           Internet światłowodowy
         </h3>
@@ -129,7 +140,14 @@
       </div>
 
       <div class="service-card">
-        <div class="service-icon"></div>
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M1.5 8.5a18 18 0 0 1 21 0"/>
+            <path d="M5 12.5a12 12 0 0 1 14 0"/>
+            <path d="M8.5 16.5a7 7 0 0 1 7 0"/>
+            <circle cx="12" cy="20" r="1" fill="#2563EB"/>
+          </svg>
+        </div>
         <h3 class="service-title">
           Internet radiowy
         </h3>
@@ -139,7 +157,13 @@
       </div>
 
       <div class="service-card">
-        <div class="service-icon"></div>
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14"/>
+            <path d="M15 7l5 5-5 5"/>
+            <path d="M19 7H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1"/>
+          </svg>
+        </div>
         <h3 class="service-title">
           Transmisja danych
         </h3>
@@ -149,7 +173,15 @@
       </div>
 
       <div class="service-card">
-        <div class="service-icon"></div>
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="3" width="20" height="5" rx="1"/>
+            <rect x="2" y="10" width="20" height="5" rx="1"/>
+            <rect x="2" y="17" width="20" height="4" rx="1"/>
+            <circle cx="18" cy="5.5" r="0.75" fill="#2563EB"/>
+            <circle cx="18" cy="12.5" r="0.75" fill="#2563EB"/>
+          </svg>
+        </div>
         <h3 class="service-title">
           Infrastruktura telekomunikacyjna
         </h3>
@@ -167,7 +199,57 @@
 
   <div class="about-container">
 
-    <div class="about-image"></div>
+    <div class="about-image">
+      <svg class="about-infographic" viewBox="0 0 480 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+        <!-- tło karty głównej -->
+        <rect x="24" y="24" width="432" height="452" rx="20" fill="#0F172A"/>
+
+        <!-- header karty -->
+        <text x="48" y="72" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#64748B" letter-spacing="2">NETWORK STATUS</text>
+        <circle cx="412" cy="65" r="7" fill="#22C55E"/>
+        <circle cx="412" cy="65" r="7" fill="#22C55E" opacity="0.4">
+          <animate attributeName="r" values="7;13;7" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="395" y="70" font-family="Arial,sans-serif" font-size="11" fill="#22C55E" text-anchor="end">ONLINE</text>
+
+        <!-- duży kołowy wskaźnik uptime -->
+        <circle cx="240" cy="200" r="90" fill="none" stroke="#1E293B" stroke-width="14"/>
+        <circle cx="240" cy="200" r="90" fill="none" stroke="#2563EB" stroke-width="14"
+          stroke-linecap="round"
+          stroke-dasharray="565"
+          stroke-dashoffset="0.6"
+          transform="rotate(-90 240 200)">
+          <animate attributeName="stroke-dashoffset" from="565" to="0.6" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+        </circle>
+        <text x="240" y="188" font-family="Arial,sans-serif" font-size="38" font-weight="800" fill="#FFFFFF" text-anchor="middle">99.9%</text>
+        <text x="240" y="215" font-family="Arial,sans-serif" font-size="13" fill="#64748B" text-anchor="middle">Dostępność usług (SLA)</text>
+
+        <!-- separator -->
+        <line x1="48" y1="320" x2="432" y2="320" stroke="#1E293B" stroke-width="1"/>
+
+        <!-- trzy mini-karty statystyk -->
+        <!-- karta 1 -->
+        <rect x="48" y="340" width="118" height="100" rx="12" fill="#1E293B"/>
+        <text x="107" y="370" font-family="Arial,sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Czas reakcji</text>
+        <text x="107" y="400" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">&lt; 15 min</text>
+        <text x="107" y="422" font-family="Arial,sans-serif" font-size="10" fill="#22C55E" text-anchor="middle">▲ SLA gwarantowane</text>
+
+        <!-- karta 2 -->
+        <rect x="181" y="340" width="118" height="100" rx="12" fill="#1E293B"/>
+        <text x="240" y="370" font-family="Arial,sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Monitoring</text>
+        <text x="240" y="400" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">24/7</text>
+        <text x="240" y="422" font-family="Arial,sans-serif" font-size="10" fill="#60A5FA" text-anchor="middle">● Aktywny</text>
+
+        <!-- karta 3 -->
+        <rect x="314" y="340" width="118" height="100" rx="12" fill="#1E293B"/>
+        <text x="373" y="370" font-family="Arial,sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Doświadczenie</text>
+        <text x="373" y="400" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">5+ lat</text>
+        <text x="373" y="422" font-family="Arial,sans-serif" font-size="10" fill="#22C55E" text-anchor="middle">▲ Klienci biznesowi</text>
+
+      </svg>
+    </div>
 
     <div>
 
@@ -187,7 +269,9 @@
       <div class="about-list">
 
         <div class="about-item">
-          <div class="about-check"></div>
+          <div class="about-check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
 
           <div>
             <h4>Niezawodność 99.9%</h4>
@@ -196,7 +280,9 @@
         </div>
 
         <div class="about-item">
-          <div class="about-check"></div>
+          <div class="about-check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
 
           <div>
             <h4>Szybka realizacja</h4>
@@ -205,7 +291,9 @@
         </div>
 
         <div class="about-item">
-          <div class="about-check"></div>
+          <div class="about-check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
 
           <div>
             <h4>Wsparcie techniczne</h4>
@@ -214,7 +302,9 @@
         </div>
 
         <div class="about-item">
-          <div class="about-check"></div>
+          <div class="about-check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
 
           <div>
             <h4>Indywidualne rozwiązania</h4>
@@ -490,6 +580,28 @@
 
 </section>
 
+<section class="clients">
+
+  <div class="clients-container">
+
+    <div class="clients-label">Zaufali nam</div>
+
+    <div class="clients-grid">
+
+      <div class="client-logo">
+        <span class="client-logo-text">Orange<sup style="font-size:0.55em;vertical-align:super">TM</sup></span>
+      </div>
+
+      <div class="client-logo">
+        <span class="client-logo-text" style="letter-spacing:0.18em">NETIA</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 <footer class="footer">
 
   <div class="footer-container">
@@ -557,6 +669,7 @@
 
 </footer>
 
+<script src="assets/js/hero-network.js"></script>
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/main.js"></script>
