@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/clients.css">
+    <link rel="stylesheet" href="assets/css/cookies.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
@@ -669,10 +670,68 @@
 
 </footer>
 
+<div id="cookie-banner" role="dialog" aria-label="Informacja o plikach cookie">
+  <div id="cookie-banner-inner">
+    <p>
+      <strong>Ta strona używa plików cookie</strong>
+      Używamy plików cookie niezbędnych do prawidłowego działania strony. Możemy też używać opcjonalnych plików cookie (analitycznych, marketingowych) – tylko za Twoją zgodą. Więcej informacji znajdziesz w naszej <a href="rodo.html">Polityce prywatności</a>.
+    </p>
+    <div id="cookie-buttons">
+      <button id="cookie-accept" type="button">Akceptuję wszystkie</button>
+      <button id="cookie-customize" type="button">Dostosuj</button>
+      <button id="cookie-reject" type="button">Odrzuć opcjonalne</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal dostosowania cookies -->
+<div id="cookie-modal" role="dialog" aria-modal="true" aria-label="Ustawienia plików cookie">
+  <div id="cookie-modal-box">
+    <h2>Ustawienia plików cookie</h2>
+    <p>Wybierz, na które kategorie plików cookie wyrażasz zgodę. Niezbędne pliki cookie są zawsze aktywne.</p>
+
+    <div class="cookie-option">
+      <div class="cookie-option-label">
+        <span>Niezbędne</span>
+        <span class="cookie-always-on">Zawsze aktywne</span>
+      </div>
+      <p class="cookie-option-desc">Wymagane do prawidłowego działania strony. Nie można ich wyłączyć.</p>
+    </div>
+
+    <div class="cookie-option">
+      <div class="cookie-option-label">
+        <span>Analityczne</span>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookie-analytics">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+      <p class="cookie-option-desc">Pomagają nam zrozumieć, jak użytkownicy korzystają ze strony (np. Google Analytics).</p>
+    </div>
+
+    <div class="cookie-option">
+      <div class="cookie-option-label">
+        <span>Marketingowe</span>
+        <label class="cookie-toggle">
+          <input type="checkbox" id="cookie-marketing">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+      <p class="cookie-option-desc">Umożliwiają wyświetlanie spersonalizowanych reklam i śledzenie kampanii.</p>
+    </div>
+
+    <div id="cookie-modal-actions">
+      <button id="cookie-save-prefs" type="button">Zapisz ustawienia</button>
+      <button id="cookie-accept-all" type="button">Akceptuję wszystkie</button>
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/hero-network.js"></script>
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/cookies.js"></script>
 
 </body>
 </html>
