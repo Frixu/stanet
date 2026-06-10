@@ -94,5 +94,14 @@
     grid-template-columns:1fr;
     gap: 44px;
   }
+}
 
+@media(max-width:600px){
+  .contact-container {
+    padding: 0 20px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
 }
