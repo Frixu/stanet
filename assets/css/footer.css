@@ -1,6 +1,6 @@
 .footer {
   background: #020617;
-  padding: 80px 0 30px;
+  padding: 72px 0 30px;
 }
 
 .footer-container {
@@ -54,9 +54,14 @@
 }
 
 @media(max-width:992px){
+  .footer {
+    padding-top: 56px;
+  }
 
   .footer-top{
     grid-template-columns:1fr;
+    gap: 32px;
+    padding-bottom: 44px;
   }
 
 }

@@ -21,30 +21,33 @@
 
   <div class="navbar-container">
 
-    <a href="#" class="logo">
+    <a href="#top" class="logo">
       <img src="assets/images/logo.svg" alt="STANET">
+      <span>STANET</span>
     </a>
 
-    <div class="nav-menu">
+    <div class="nav-menu" id="nav-menu">
       <a href="#uslugi">Usługi</a>
       <a href="#o-nas">O nas</a>
       <a href="#realizacje">Realizacje</a>
       <a href="#opinie">Opinie</a>
+      <a href="#faq">FAQ</a>
       <a href="#kontakt">Kontakt</a>
+      <a href="rodo.html">RODO</a>
     </div>
 
     <a href="#kontakt" class="nav-button">
       Zamów konsultację
     </a>
 
-    <div class="hamburger">
+    <button class="hamburger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="nav-menu">
       ☰
-    </div>
+    </button>
 
   </div>
 
 </nav>
-    <section class="hero">
+    <section class="hero" id="top">
 
         <div class="hero-container">
 
@@ -79,7 +82,7 @@
                     </div>
 
                     <div>
-                        <div class="hero-stat-number">20+</div>
+                        <div class="hero-stat-number">5+</div>
                         <div class="hero-stat-label">Lat doświadczenia</div>
                     </div>
 
@@ -87,14 +90,12 @@
 
             </div>
 
-            <div>
-                <h2>Tu będzie grafika sieci</h2>
-            </div>
+            <div class="hero-visual" aria-hidden="true"></div>
 
         </div>
 
     </section>
-    <section class="services">
+    <section class="services" id="uslugi">
 
   <div class="services-container">
 
@@ -162,7 +163,7 @@
   </div>
 
 </section>
-<section class="about">
+<section class="about" id="o-nas">
 
   <div class="about-container">
 
@@ -179,7 +180,7 @@
       </h2>
 
       <p class="about-description">
-        Od ponad 20 lat budujemy i rozwijamy sieci
+        Od ponad 5 lat budujemy i rozwijamy sieci
         telekomunikacyjne dla klientów biznesowych.
       </p>
 
@@ -229,7 +230,7 @@
 
 </section>
 
-<section class="stats">
+<section class="stats" id="realizacje">
 
   <div class="stats-container">
 
@@ -253,12 +254,12 @@
     <div class="stats-grid">
 
       <div class="stat-card">
-        <div class="stat-number">20+</div>
+        <div class="stat-number">5+</div>
         <div class="stat-label">Lat doświadczenia</div>
       </div>
 
       <div class="stat-card">
-        <div class="stat-number">500+</div>
+        <div class="stat-number">1000+</div>
         <div class="stat-label">Klientów biznesowych</div>
       </div>
 
@@ -278,7 +279,7 @@
 
 </section>
 
-<section class="testimonials">
+<section class="testimonials" id="opinie">
 
   <div class="testimonials-container">
 
@@ -364,7 +365,7 @@
   </div>
 
 </section>
-<section class="faq">
+<section class="faq" id="faq">
 
   <div class="faq-container">
 
@@ -381,41 +382,45 @@
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">
-        Jak szybko możecie uruchomić usługę?
-      </div>
+      <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">
+        <span>Jak szybko możecie uruchomić usługę?</span>
+        <span class="faq-arrow" aria-hidden="true"></span>
+      </button>
 
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-1">
         W zależności od lokalizacji od kilku dni do kilku tygodni.
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">
-        Czy oferujecie wsparcie 24/7?
-      </div>
+      <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+        <span>Czy oferujecie wsparcie 24/7?</span>
+        <span class="faq-arrow" aria-hidden="true"></span>
+      </button>
 
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-2">
         Tak, zapewniamy monitoring oraz wsparcie techniczne przez całą dobę.
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">
-        Czy obsługujecie firmy wielooddziałowe?
-      </div>
+      <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+        <span>Czy obsługujecie firmy wielooddziałowe?</span>
+        <span class="faq-arrow" aria-hidden="true"></span>
+      </button>
 
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-3">
         Tak, realizujemy transmisję danych oraz połączenia między oddziałami.
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question">
-        Czy oferujecie SLA?
-      </div>
+      <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+        <span>Czy oferujecie SLA?</span>
+        <span class="faq-arrow" aria-hidden="true"></span>
+      </button>
 
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-4">
         Tak, przygotowujemy indywidualne warunki SLA dla klientów biznesowych.
       </div>
     </div>
@@ -493,7 +498,7 @@
 
       <div>
 
-        <a href="#" class="footer-logo">
+        <a href="#top" class="footer-logo">
           <img src="assets/images/logo.svg" alt="STANET">
         </a>
 
@@ -510,9 +515,11 @@
 
         <h4>Firma</h4>
 
-        <a href="#">O nas</a>
-        <a href="#">Realizacje</a>
-        <a href="#">Kontakt</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#realizacje">Realizacje</a>
+        <a href="#faq">FAQ</a>
+        <a href="rodo.html">RODO</a>
+        <a href="#kontakt">Kontakt</a>
 
       </div>
 
@@ -520,9 +527,9 @@
 
         <h4>Usługi</h4>
 
-        <a href="#">Internet światłowodowy</a>
-        <a href="#">Internet radiowy</a>
-        <a href="#">Transmisja danych</a>
+        <a href="#uslugi">Internet światłowodowy</a>
+        <a href="#uslugi">Internet radiowy</a>
+        <a href="#uslugi">Transmisja danych</a>
 
       </div>
 
@@ -551,6 +558,7 @@
 </footer>
 
 <script src="assets/js/navbar.js"></script>
+<script src="assets/js/animations.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

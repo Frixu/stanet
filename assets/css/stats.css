@@ -1,6 +1,6 @@
 .stats {
   background: #0F172A;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .stats-container {
@@ -11,7 +11,7 @@
 
 .stats-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 
 .stats-subtitle {
@@ -65,6 +65,14 @@
 }
 
 @media(max-width:768px){
+  .stats {
+    padding: 72px 0;
+  }
+
+  .stats-header {
+    margin-bottom: 44px;
+  }
+
   .stats-grid{
     grid-template-columns: 1fr;
   }

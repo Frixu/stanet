@@ -1,6 +1,6 @@
 .about {
   background: #F8FAFC;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .about-container {
@@ -10,7 +10,7 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 64px;
   align-items: center;
 }
 
@@ -76,9 +76,13 @@
 }
 
 @media(max-width:992px){
+  .about {
+    padding: 72px 0;
+  }
 
   .about-container{
     grid-template-columns:1fr;
+    gap: 44px;
   }
 
 }
