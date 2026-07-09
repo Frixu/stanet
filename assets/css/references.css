@@ -1,0 +1,135 @@
+.references {
+  background: #F8FAFC;
+  padding: 100px 0;
+}
+
+.references-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.references-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.references-subtitle {
+  color: #2563EB;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.references-title {
+  font-size: 3rem;
+  color: #0F172A;
+  margin-bottom: 20px;
+}
+
+.references-description {
+  color: #64748B;
+  max-width: 660px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.references-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ref-card {
+  flex: 1 1 260px;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ref-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15,23,42,0.10);
+}
+
+/* podgląd dokumentu (miniatura listu referencyjnego) */
+.ref-doc {
+  position: relative;
+  padding: 22px;
+  background: #EEF2F7;
+  display: flex;
+  justify-content: center;
+}
+
+.ref-doc svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(15,23,42,0.12);
+}
+
+.ref-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #2563EB;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 9px;
+  border-radius: 6px;
+}
+
+.ref-card-footer {
+  padding: 20px 22px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.ref-company {
+  display: block;
+  color: #0F172A;
+  font-weight: 700;
+  font-size: 1.02rem;
+  margin-bottom: 6px;
+}
+
+.ref-view {
+  color: #2563EB;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.ref-card:hover .ref-view {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .references {
+    padding: 72px 0;
+  }
+
+  .references-container {
+    padding: 0 20px;
+  }
+
+  .references-title {
+    font-size: 2rem;
+  }
+
+  .ref-card {
+    flex: 1 1 100%;
+    max-width: 360px;
+  }
+}

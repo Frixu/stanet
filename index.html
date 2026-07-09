@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/stats.css">
     <link rel="stylesheet" href="assets/css/testimonials.css">
+    <link rel="stylesheet" href="assets/css/references.css">
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/clients.css">
+    <link rel="stylesheet" href="assets/css/coverage.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="assets/css/cookies.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
@@ -474,6 +477,122 @@
   </div>
 
 </section>
+<section class="references" id="referencje">
+
+  <div class="references-container">
+
+    <div class="references-header">
+      <div class="references-subtitle">REFERENCJE</div>
+      <h2 class="references-title">Listy referencyjne</h2>
+      <p class="references-description">
+        Zaufanie klientów potwierdzone dokumentami. Kliknij, aby zobaczyć
+        pełny list referencyjny w formacie PDF.
+      </p>
+    </div>
+
+    <!--
+      JAK DODAĆ PRAWDZIWĄ REFERENCJĘ:
+      1. Wrzuć plik PDF do folderu: assets/referencje/nazwa-firmy.pdf
+      2. Skopiuj poniższy blok <a class="ref-card"> i zmień:
+         - href  -> ścieżkę do swojego PDF
+         - ref-company -> nazwę firmy
+      3. (opcjonalnie) zamiast rysunku SVG możesz wstawić miniaturę skanu:
+         <div class="ref-doc"><span class="ref-badge">PDF</span>
+           <img src="assets/referencje/miniatura.jpg" alt="Referencja">
+         </div>
+    -->
+
+    <div class="references-grid">
+
+      <a class="ref-card" href="assets/referencje/wzor-referencji.pdf" target="_blank" rel="noopener">
+        <div class="ref-doc">
+          <span class="ref-badge">PDF</span>
+          <svg viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="0" y="0" width="240" height="300" rx="4" fill="#FFFFFF"/>
+            <rect x="0" y="0" width="240" height="46" fill="#2563EB"/>
+            <circle cx="28" cy="23" r="11" fill="#FFFFFF"/>
+            <rect x="48" y="17" width="90" height="6" rx="3" fill="#FFFFFF" opacity="0.9"/>
+            <rect x="48" y="28" width="60" height="5" rx="2.5" fill="#FFFFFF" opacity="0.6"/>
+            <rect x="24" y="74" width="150" height="7" rx="3.5" fill="#0F172A" opacity="0.75"/>
+            <rect x="24" y="98" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="112" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="126" width="176" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="140" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="154" width="140" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="178" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="192" width="168" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="206" width="184" height="5" rx="2.5" fill="#CBD5E1"/>
+            <path d="M150 258 q10 -14 20 0 t20 0" stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="52" cy="256" r="20" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="ref-card-footer">
+          <span class="ref-company">Firma produkcyjna</span>
+          <span class="ref-view">Zobacz referencję (PDF) →</span>
+        </div>
+      </a>
+
+      <a class="ref-card" href="assets/referencje/wzor-referencji.pdf" target="_blank" rel="noopener">
+        <div class="ref-doc">
+          <span class="ref-badge">PDF</span>
+          <svg viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="0" y="0" width="240" height="300" rx="4" fill="#FFFFFF"/>
+            <rect x="0" y="0" width="240" height="46" fill="#2563EB"/>
+            <circle cx="28" cy="23" r="11" fill="#FFFFFF"/>
+            <rect x="48" y="17" width="90" height="6" rx="3" fill="#FFFFFF" opacity="0.9"/>
+            <rect x="48" y="28" width="60" height="5" rx="2.5" fill="#FFFFFF" opacity="0.6"/>
+            <rect x="24" y="74" width="150" height="7" rx="3.5" fill="#0F172A" opacity="0.75"/>
+            <rect x="24" y="98" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="112" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="126" width="176" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="140" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="154" width="140" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="178" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="192" width="168" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="206" width="184" height="5" rx="2.5" fill="#CBD5E1"/>
+            <path d="M150 258 q10 -14 20 0 t20 0" stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="52" cy="256" r="20" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="ref-card-footer">
+          <span class="ref-company">Sieć handlowa</span>
+          <span class="ref-view">Zobacz referencję (PDF) →</span>
+        </div>
+      </a>
+
+      <a class="ref-card" href="assets/referencje/wzor-referencji.pdf" target="_blank" rel="noopener">
+        <div class="ref-doc">
+          <span class="ref-badge">PDF</span>
+          <svg viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="0" y="0" width="240" height="300" rx="4" fill="#FFFFFF"/>
+            <rect x="0" y="0" width="240" height="46" fill="#2563EB"/>
+            <circle cx="28" cy="23" r="11" fill="#FFFFFF"/>
+            <rect x="48" y="17" width="90" height="6" rx="3" fill="#FFFFFF" opacity="0.9"/>
+            <rect x="48" y="28" width="60" height="5" rx="2.5" fill="#FFFFFF" opacity="0.6"/>
+            <rect x="24" y="74" width="150" height="7" rx="3.5" fill="#0F172A" opacity="0.75"/>
+            <rect x="24" y="98" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="112" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="126" width="176" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="140" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="154" width="140" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="178" width="192" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="192" width="168" height="5" rx="2.5" fill="#CBD5E1"/>
+            <rect x="24" y="206" width="184" height="5" rx="2.5" fill="#CBD5E1"/>
+            <path d="M150 258 q10 -14 20 0 t20 0" stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="52" cy="256" r="20" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="ref-card-footer">
+          <span class="ref-company">Instytucja publiczna</span>
+          <span class="ref-view">Zobacz referencję (PDF) →</span>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 <section class="faq" id="faq">
 
   <div class="faq-container">
@@ -615,6 +734,46 @@
         <span class="client-logo-text" style="letter-spacing:0.18em">NETIA</span>
       </div>
 
+      <div class="client-logo">
+        <span class="client-logo-text">Landtech</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="coverage" id="zasieg">
+
+  <div class="coverage-container">
+
+    <div class="coverage-header">
+      <div class="coverage-subtitle">NASZ ZASIĘG</div>
+      <h2 class="coverage-title">Setki lokalizacji w całej Polsce</h2>
+      <p class="coverage-description">
+        Obsługujemy klientów biznesowych na terenie całego kraju.
+        Każdy punkt na mapie to zrealizowane podłączenie.
+      </p>
+    </div>
+
+    <div class="coverage-map">
+      <div id="coverage-leaflet" class="coverage-leaflet"></div>
+    </div>
+
+    <div class="coverage-stats">
+      <div class="coverage-stat">
+        <div class="coverage-stat-number">1000+</div>
+        <div class="coverage-stat-label">Podłączonych lokalizacji</div>
+      </div>
+      <div class="coverage-stat">
+        <div class="coverage-stat-number">16</div>
+        <div class="coverage-stat-label">Województw</div>
+      </div>
+      <div class="coverage-stat">
+        <div class="coverage-stat-number">100%</div>
+        <div class="coverage-stat-label">Zasięg krajowy</div>
+      </div>
     </div>
 
   </div>
@@ -751,6 +910,9 @@
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/counters.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/js/coverage-points.js?v=1"></script>
+<script src="assets/js/map-coverage.js?v=1"></script>
 <script src="assets/js/cookies.js"></script>
 
 </body>
