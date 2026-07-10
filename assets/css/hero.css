@@ -7,9 +7,9 @@
 }
 
 .hero-container {
-  max-width: 1400px;
+  max-width: none;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 48px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -60,24 +60,25 @@
   font-size: 0.9rem;
 }
 
-.hero-buttons button {
+.hero-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px 28px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-}
-
-.hero-buttons button:first-child {
+  text-decoration: none;
   background: #2563EB;
   color: white;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
-.hero-buttons button:last-child {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.2);
-  color: white;
+.hero-buttons a:hover {
+  background: #1D4ED8;
+  transform: translateY(-1px);
 }
 
 .hero-visual {
@@ -164,7 +165,7 @@
     flex-direction: column;
   }
 
-  .hero-buttons button {
+  .hero-buttons a {
     width: 100%;
   }
 

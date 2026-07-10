@@ -1,0 +1,62 @@
+.speedtest-section {
+  padding: 70px 0 100px;
+}
+
+.speedtest-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(15,23,42,0.06);
+  animation: legalFadeUp 0.55s ease 0.15s both;
+}
+
+.speedtest-frame {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.speedtest-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.speedtest-note {
+  text-align: center;
+  color: #64748B;
+  font-size: 0.85rem;
+  margin-top: 18px;
+}
+
+.speedtest-note a {
+  color: #2563EB;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .speedtest-section {
+    padding: 48px 0 72px;
+  }
+
+  .speedtest-card {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .speedtest-frame {
+    padding-bottom: 120%;
+  }
+}
