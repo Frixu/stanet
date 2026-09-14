@@ -105,3 +105,10 @@
   }
 
 }
+
+a.service-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
