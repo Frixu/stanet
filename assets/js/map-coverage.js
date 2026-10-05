@@ -22,9 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // usuń domyślną flagę Ukrainy z podpisu Leaflet
   map.attributionControl.setPrefix('<a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>');
 
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-    attribution: '&copy; OpenStreetMap &copy; CARTO',
-    subdomains: "abcd"
+  // ciemne kafelki Esri (darmowe, bez klucza API)
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
+    attribution: 'Tiles &copy; Esri',
+    maxZoom: 16
   }).addTo(map);
 
   LOCATIONS.forEach(([lat, lng]) => {
